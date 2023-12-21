@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".Register_screen">
+
+    <ImageButton
+        android:id="@+id/backbuttonr"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@color/trasnparent"
+        android:src="@drawable/back_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:layout_width="149dp"
+        android:layout_height="103dp"
+        android:fontFamily="@font/dm_sans_bold"
+        android:gravity="left"
+        android:text="Buat \nAkun"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <EditText
+        android:id="@+id/person"
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:background="@drawable/shape_textedit"
+        android:drawableStart="@drawable/user_icon"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/dmsans_medium"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColor="@color/texthint"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.402" />
+
+    <EditText
+        android:id="@+id/loginemailr"
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:background="@drawable/shape_textedit"
+        android:drawableStart="@drawable/email_icon"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/dmsans_medium"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColor="@color/texthint"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/person"
+        app:layout_constraintVertical_bias="0.014" />
+
+    <EditText
+        android:id="@+id/lloginpassword"
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:background="@drawable/shape_textedit"
+        android:drawableStart="@drawable/key_icon"
+        android:drawableEnd="@drawable/eye_icon"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/dmsans_medium"
+        android:hint="Password"
+        android:inputType="textVisiblePassword"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColor="@color/texthint"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginemailr"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <EditText
+        android:id="@+id/lloginpassword2"
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:background="@drawable/shape_textedit"
+        android:drawableStart="@drawable/key_icon"
+        android:drawableEnd="@drawable/off_eye_icon"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/dmsans_medium"
+        android:hint="Confirm Password"
+        android:inputType="textVisiblePassword"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColor="@color/texthint"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginemailr"
+        app:layout_constraintVertical_bias="0.275" />
+
+    <Button
+        android:id="@+id/Rregis"
+        android:layout_width="324dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/brown"
+        android:fontFamily="@font/dm_sans_bold"
+        android:text="Register"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lloginpassword2"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="150dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="76dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llogin"
+        app:layout_constraintVertical_bias="0.121">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/goggle_image" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="33dp"
+            android:src="@drawable/facebook_image" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.26">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sudah punya akun?"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/Rlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:text="Login"
+            android:textColor="@color/blue"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
